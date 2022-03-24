@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.game{
+  margin-left: 550px;
+  margin-top: 50px;
+  width : 50%;
+  border: 1px solid black;
+  border-radius: 30px;
+  height : 500px
+}
+
+.score{
+  margin: 10px;
+  float: left;
+  width : 30%;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
