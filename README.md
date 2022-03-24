@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+First insatll packages
+npm install
+then,
+npm start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Your goal with this assignment is to write a simple browser-based game in the javascript framework of your choice. The goal of the game is for the player to get to 50 points while pressing the "roll" button the fewest number of times. Here are the rules and guidelines of the game application:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Before playing, the player should enter their name, so the app can keep track of best scores. (Local storage is fine.)
+A button should allow for starting of a new game for the current player.
+Once in a game, when "roll" button is pressed, a number from 0-10 should be randomly generated and displayed to the player. This number represents the number of points the player receives for that roll.
+The UI should display the current number of points and well as the number of rolls that the player has made during their current game.
+Before a player rolls, they can optionally use a "power up." A power up allows the player to select if the next roll will be an even or an odd number. The player can only use this power up twice during a given game.
+A player only "wins" when their score sums exactly to 50. For example, if a player has 45 points, they need a 5 to win. A 6 will not count. (Up to you if overshooting the 50 point target means the player loses the game and has to start over, or the roll is simply thrown out, while adding to their roll count, and they are able to try again to get the "right" number to win.)
+After the player wins, their name is added to the "high score" board, sorted by number of rolls it took to win, lowest first. The high score board should keep track of the 5 best scores. It should persist even through page refreshes.
+If a player beats a high score, the UI should congratulate them.
